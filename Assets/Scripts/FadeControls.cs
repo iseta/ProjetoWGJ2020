@@ -11,13 +11,10 @@ public class FadeControls : MonoBehaviour
     public int sceneToLoadWhenDone;
     public bool needsIntro;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        if (needsIntro)
-        {
-            StartCoroutine(Fade(-1));
-        }
+        if (needsIntro){ StartCoroutine(Fade(-1));}
     }
 
     public void ExitOutro()
@@ -25,6 +22,7 @@ public class FadeControls : MonoBehaviour
         StartCoroutine(Fade(1));
     }
 
+    // Ajustes das cores das pecas de acordo com a posicao
     private IEnumerator Fade(int dir)
     {
         float alpha = 1;
@@ -33,10 +31,7 @@ public class FadeControls : MonoBehaviour
         {
             SetColorImage(ref alpha, dir);
             yield return null;
-            if (dir == 1)
-            {
-                SceneManager.LoadScene(sceneToLoadWhenDone);
-            }
+            if (dir == 1) { SceneManager.LoadScene(sceneToLoadWhenDone);}
         }
     }
 

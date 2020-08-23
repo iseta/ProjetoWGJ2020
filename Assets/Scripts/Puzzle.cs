@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Puzzle : MonoBehaviour
 {
-
+    // definir as imagens do puzzle, total de blocos e duracao do movimento
     public Texture2D image;
     public int blocksPerLine = 4;
     public int shuffleLength = 20;
@@ -27,36 +27,37 @@ public class Puzzle : MonoBehaviour
         CreatePuzzle();
     }
 
+    //funcao update para incluir botao espaco para rodar o puzzle
     void Update()
     {
-        if (state == PuzzleState.Solved && Input.GetKeyDown(KeyCode.Space))
-        {
-            StartShuffle();
-        }
+        
+        if (state == PuzzleState.Solved && Input.GetKeyDown(KeyCode.Space)){ StartShuffle(); }
+
     }
 
+    //funcao para realizar o corte dos blocos do quebra cabeca
     void CreatePuzzle()
     {
         blocks = new Block[blocksPerLine, blocksPerLine];
         Texture2D[,] imageSlices = ImageSlicer.GetSlices(image, blocksPerLine);
+
         for (int y = 0; y < blocksPerLine; y++)
         {
             for (int x = 0; x < blocksPerLine; x++)
             {
                 GameObject blockObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                
                 blockObject.transform.position = -Vector2.one * (blocksPerLine - 1) * .5f + new Vector2(x, y);
                 blockObject.transform.parent = transform;
 
                 Block block = blockObject.AddComponent<Block>();
                 block.OnBlockPressed += PlayerMoveBlockInput;
                 block.OnFinishedMoving += OnBlockFinishedMoving;
+
                 block.Init(new Vector2Int(x, y), imageSlices[x, y]);
                 blocks[x, y] = block;
 
-                if (y == 0 && x == blocksPerLine - 1)
-                {
-                    emptyBlock = block;
-                }
+                if (y == 0 && x == blocksPerLine - 1) { emptyBlock = block; }
             }
         }
 
@@ -131,7 +132,8 @@ public class Puzzle : MonoBehaviour
     }
 
     void MakeNextShuffleMove()
-    {
+    {   
+        // os blocos vao mudando de posicao nas quatro direcoes
         Vector2Int[] offsets = { new Vector2Int(1, 0), new Vector2Int(-1, 0), new Vector2Int(0, 1), new Vector2Int(0, -1) };
         int randomIndex = Random.Range(0, offsets.Length);
 
@@ -158,10 +160,7 @@ public class Puzzle : MonoBehaviour
     {
         foreach (Block block in blocks)
         {
-            if (!block.IsAtStartingCoord())
-            {
-                return;
-            }
+            if (!block.IsAtStartingCoord()){ return; }
         }
 
         state = PuzzleState.Solved;

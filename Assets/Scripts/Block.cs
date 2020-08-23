@@ -7,13 +7,13 @@ public class Block : MonoBehaviour
 
     public event System.Action<Block> OnBlockPressed;
     public event System.Action OnFinishedMoving;
-
     public Vector2Int coord;
+
     Vector2Int startingCoord;
     MeshRenderer selfMesh;
     bool isCorrect;
 
-    public void Init(Vector2Int startingCoord, Texture2D image)
+    public void Init (Vector2Int startingCoord, Texture2D image)
     {
         selfMesh = GetComponent<MeshRenderer>();
         this.startingCoord = startingCoord;
@@ -42,14 +42,14 @@ public class Block : MonoBehaviour
         while (percent < 1)
         {
             percent += Time.deltaTime / duration;
-            transform.position = Vector2.Lerp(initialPos, target, percent);
+            transform.position = Vector2.Lerp (initialPos, target, percent);
             yield return null;
         }
         IsAtStartingCoord();
         OnFinishedMoving?.Invoke();
     }
 
-    IEnumerator AnimateGrayscale(float duration, bool isGrayScale)
+    IEnumerator AnimateGrayscale (float duration, bool isGrayScale)
     {
         float time = 0;
         while (duration > time)
@@ -66,7 +66,7 @@ public class Block : MonoBehaviour
         SetGrayscale(isGrayScale? 1:0);
     }
 
-    private void SetGrayscale(float amount = 1)
+    private void SetGrayscale (float amount = 1)
     {
         selfMesh.material.SetFloat("_GrayscaleAmount", amount);
     }
