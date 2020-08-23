@@ -10,14 +10,18 @@ public class Block : MonoBehaviour
 
     public Vector2Int coord;
     Vector2Int startingCoord;
+    MeshRenderer selfMesh;
+    bool isCorrect;
 
     public void Init(Vector2Int startingCoord, Texture2D image)
     {
+        selfMesh = GetComponent<MeshRenderer>();
         this.startingCoord = startingCoord;
         coord = startingCoord;
 
-        GetComponent<MeshRenderer>().material = Resources.Load<Material>("Block");
-        GetComponent<MeshRenderer>().material.mainTexture = image;
+        selfMesh.material = Resources.Load<Material>("Block");
+        selfMesh.material.mainTexture = image;
+        IsAtStartingCoord();
     }
 
     public void MoveToPosition(Vector2 target, float duration)
@@ -27,10 +31,7 @@ public class Block : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (OnBlockPressed != null)
-        {
-            OnBlockPressed(this);
-        }
+        OnBlockPressed?.Invoke(this);
     }
 
     IEnumerator AnimateMove(Vector2 target, float duration)
@@ -44,15 +45,49 @@ public class Block : MonoBehaviour
             transform.position = Vector2.Lerp(initialPos, target, percent);
             yield return null;
         }
-
-        if (OnFinishedMoving != null)
-        {
-            OnFinishedMoving();
-        }
+        IsAtStartingCoord();
+        OnFinishedMoving?.Invoke();
     }
+
+    IEnumerator AnimateGrayscale(float duration, bool isGrayScale)
+    {
+        float time = 0;
+        while (duration > time)
+        {
+            float durationFrame = Time.deltaTime;
+            float ratio = time / duration;
+            float grayAmount = isGrayScale
+                ? ratio
+                : 1 - ratio;
+            SetGrayscale(grayAmount);
+            time += durationFrame;
+            yield return null;
+        }
+        SetGrayscale(isGrayScale? 1:0);
+    }
+
+    private void SetGrayscale(float amount = 1)
+    {
+        selfMesh.material.SetFloat("_GrayscaleAmount", amount);
+    }
+
 
     public bool IsAtStartingCoord()
     {
+        if (coord == startingCoord && gameObject.activeSelf)
+        {
+            StartCoroutine(AnimateGrayscale(.2f, false));
+            isCorrect = true;
+        }
+        else
+        {
+            if (isCorrect && gameObject.activeSelf)
+            {
+                StartCoroutine(AnimateGrayscale(.2f, true));
+                isCorrect = false;
+            }
+        }
         return coord == startingCoord;
+
     }
 }

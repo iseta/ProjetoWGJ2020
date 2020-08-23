@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puzzle : MonoBehaviour
 {
@@ -59,8 +60,9 @@ public class Puzzle : MonoBehaviour
             }
         }
 
-        Camera.main.orthographicSize = blocksPerLine * .55f;
+        Camera.main.orthographicSize = blocksPerLine * .8f;
         inputs = new Queue<Block>();
+        StartShuffle();
     }
 
     void PlayerMoveBlockInput(Block blockToMove)
@@ -164,5 +166,6 @@ public class Puzzle : MonoBehaviour
 
         state = PuzzleState.Solved;
         emptyBlock.gameObject.SetActive(true);
+        emptyBlock.IsAtStartingCoord();
     }
 }
