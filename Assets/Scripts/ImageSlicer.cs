@@ -18,7 +18,8 @@ public static class ImageSlicer
             {
                 Texture2D block = new Texture2D(blockSize, blockSize);
                 block.wrapMode = TextureWrapMode.Clamp;
-                block.SetPixels(image.GetPixels(x * blockSize, y * blockSize, blockSize, blockSize));
+                Color[] pix = image.GetPixels(x * blockSize, y * blockSize, blockSize, blockSize);
+                block.SetPixels(pix);
                 block.Apply();
                 blocks[x, y] = block;
             }
