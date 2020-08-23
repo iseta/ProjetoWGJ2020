@@ -123,7 +123,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
-    void StartShuffle()
+    public void StartShuffle()
     {
         state = PuzzleState.Shuffling;
         shuffleMovesRemaining = shuffleLength;
