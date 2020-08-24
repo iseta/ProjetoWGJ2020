@@ -14,24 +14,35 @@ public class FadeControls : MonoBehaviour
 
     void Start()
     {
-        if (needsIntro){ StartCoroutine(Fade(-1));}
+        if (needsIntro){ StartCoroutine(FadeIn());}
     }
 
     public void ExitOutro()
     {
-        StartCoroutine(Fade(1));
+        StartCoroutine(FadeOut());
     }
 
     // Ajustes das cores das pecas de acordo com a posicao
-    private IEnumerator Fade(int dir)
+    private IEnumerator FadeIn()
     {
         float alpha = 1;
         float fadeEndValue = 0;
         while (alpha >= fadeEndValue)
         {
-            SetColorImage(ref alpha, dir);
+            SetColorImage(ref alpha, -1);
             yield return null;
-            if (dir == 1) { SceneManager.LoadScene(sceneToLoadWhenDone);}
+        }
+    }
+
+    private IEnumerator FadeOut()
+    {
+        float alpha = 0;
+        float fadeEndValue = 1;
+        while (alpha <= fadeEndValue)
+        {
+            SetColorImage(ref alpha, 1);
+            yield return null;
+            StartCoroutine(WaitToLoadScene());
         }
     }
 
@@ -39,5 +50,11 @@ public class FadeControls : MonoBehaviour
     {
         fadeOutUIImage.color = new Color(fadeOutUIImage.color.r, fadeOutUIImage.color.g, fadeOutUIImage.color.b, alpha);
         alpha += Time.deltaTime * (1.0f / fadeSpeed) * (fadeDirection);
+    }
+
+    IEnumerator WaitToLoadScene()
+    {
+        yield return new WaitForSeconds(fadeSpeed);
+        SceneManager.LoadScene(sceneToLoadWhenDone);
     }
 }

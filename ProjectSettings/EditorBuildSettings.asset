@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IntroTeste.unity
+    path: Assets/Scenes/MVP/MenuTeste.unity
+    guid: c7621646c78be8d4e9e7dd32a3d58815
+  - enabled: 1
+    path: Assets/Scenes/MVP/IntroTeste.unity
     guid: 614b9f4c3f84c60448f79500bcb62470
   - enabled: 1
-    path: Assets/Scenes/CenaTeste.unity
-    guid: c7621646c78be8d4e9e7dd32a3d58815
+    path: Assets/Scenes/MVP/SelecaoFases.unity
+    guid: 607ceb1e7de760f468505234ca000c68
+  - enabled: 1
+    path: Assets/Scenes/MVP/PrimeiraFase.unity
+    guid: 8f4f846ca2c0b7444a61f42961363328
+  - enabled: 1
+    path: Assets/Scenes/MVP/PosFase1.unity
+    guid: a6c11907b161509488629d4c648643fc
+  - enabled: 1
+    path: Assets/Scenes/MVP/CenaFeliz.unity
+    guid: a4a6be2231feb2640bfdfe2d1f2fea9f
+  - enabled: 1
+    path: Assets/Scenes/MVP/Creditos.unity
+    guid: 3c831726339cce44fb90e1ce7f1894a0
   m_configObjects: {}
