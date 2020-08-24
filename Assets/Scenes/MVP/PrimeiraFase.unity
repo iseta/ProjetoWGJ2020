@@ -328,8 +328,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Clique numa pe\xE7a pr\xF3xima ao espa\xE7o vazio para mov\xEA-la para
-    l\xE1. \nResolva o quebra-cabe\xE7as para revelar a foto."
+  m_text: "Resolva o quebra-cabe\xE7as para revelar a foto!\r\nClique na pe\xE7a
+    pr\xF3xima a um espa\xE7o vazio para mov\xEA-la.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deseja reiniciar o jogo?
+  m_text: "Quer recome\xE7ar o quebra-cabe\xE7as?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
