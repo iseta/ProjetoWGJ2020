@@ -27,7 +27,7 @@ public class Puzzle : MonoBehaviour
         CreatePuzzle();
     }
 
-    //funcao update para incluir botao espaco para rodar o puzzle
+    //metodo para incluir botao espaco para rodar o puzzle
     void Update()
     {
         
@@ -35,7 +35,7 @@ public class Puzzle : MonoBehaviour
 
     }
 
-    //funcao para realizar o corte dos blocos do quebra cabeca
+    //metodo para realizar o corte dos blocos do quebra cabeca
     void CreatePuzzle()
     {
         blocks = new Block[blocksPerLine, blocksPerLine];
@@ -66,6 +66,7 @@ public class Puzzle : MonoBehaviour
         StartShuffle();
     }
 
+    //metodo para preparar o proximo movimento do puzzle
     void PlayerMoveBlockInput(Block blockToMove)
     {
         if (state == PuzzleState.InPlay)
@@ -75,6 +76,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
+    //metodo para verificar se possivel mover o bloco
     void MakeNextPlayerMove()
     {
         while (inputs.Count > 0 && !blockIsMoving)
@@ -83,6 +85,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
+    //metodo para mover o bloco se houver espaco vazio ao lado
     void MoveBlock(Block blockToMove, float duration)
     {
         if ((blockToMove.coord - emptyBlock.coord).sqrMagnitude == 1)
@@ -101,6 +104,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
+    //metodo para sequenciar os movimentos do puzzle
     void OnBlockFinishedMoving()
     {
         blockIsMoving = false;
@@ -123,6 +127,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
+    //metodo para iniciar o shuffle das peças 
     public void StartShuffle()
     {
         state = PuzzleState.Shuffling;
@@ -131,9 +136,9 @@ public class Puzzle : MonoBehaviour
         MakeNextShuffleMove();
     }
 
+    //metodo para coordenar o offset entre os blocos
     void MakeNextShuffleMove()
     {   
-        // os blocos vao mudando de posicao nas quatro direcoes
         Vector2Int[] offsets = { new Vector2Int(1, 0), new Vector2Int(-1, 0), new Vector2Int(0, 1), new Vector2Int(0, -1) };
         int randomIndex = Random.Range(0, offsets.Length);
 
