@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,6 +11,7 @@ public class FadeControls : MonoBehaviour
     public float fadeSpeed = 0.8f;
     public int sceneToLoadWhenDone;
     public bool needsIntro;
+    public UnityEvent doWhenIntroDone;
 
 
     void Start()
@@ -32,6 +34,7 @@ public class FadeControls : MonoBehaviour
             SetColorImage(ref alpha, -1);
             yield return null;
         }
+        doWhenIntroDone.Invoke();
     }
 
     private IEnumerator FadeOut()

@@ -768,6 +768,9 @@ MonoBehaviour:
   fadeSpeed: 0.8
   sceneToLoadWhenDone: 0
   needsIntro: 1
+  doWhenIntroDone:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1652917132
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,8 +983,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Artes</b>\nCami\nNicky\nSkweek\n\n<b>Conte\xFAdo</b>\nBianca\nNecro\n\n<b>Game
-    Design</b>\nJ\xE9ss\nSongette\n\n<b>\xC1udio</b>\nDaniele\nLina\n\n<b>Programa\xE7\xE3o</b>\nShelly\nMinare\nIseta"
+  m_text: "<b>Artes</b>\r\nCamille (Cami)\r\nEliane Bittencourt (Eli)\r\nNicky Silva\r\n\r\n<b>\xC1udio
+    e Trilha</b>\r\nDaniele Dantas\r\nLina Melo\r\n\r\n<b>Conte\xFAdo</b>\r\nBianca\r\n\xCDris\r\n\r\n<b>Game
+    Design</b>\r\nJ\xE9ssica Della Flor\r\nNat\xE1lia Borges\r\n\r\n<b>Programa\xE7\xE3o</b>\r\nFernanda
+    Galindo\r\nIsabelle Brandelero (Iseta)\r\nShelly Gabriela Leal"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1050,10 +1055,10 @@ MonoBehaviour:
   m_margin: {x: 20, y: 20, z: 20, w: 0}
   m_textInfo:
     textComponent: {fileID: 1720554795}
-    characterCount: 126
+    characterCount: 266
     spriteCount: 0
-    spaceCount: 21
-    wordCount: 18
+    spaceCount: 37
+    wordCount: 34
     linkCount: 0
     lineCount: 21
     pageCount: 1
