@@ -170,8 +170,7 @@ public class Puzzle : MonoBehaviour
 
         state = PuzzleState.Solved;
         emptyBlock.gameObject.SetActive(true);
-        emptyBlock.IsAtStartingCoord();
-
+        emptyBlock.StartCoroutine(emptyBlock.AnimateGrayscale(.2f, false));
         GetComponent<Animation>().Play("Vitoria");
     }
 }

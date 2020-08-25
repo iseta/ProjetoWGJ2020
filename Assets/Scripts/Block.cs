@@ -12,7 +12,7 @@ public class Block : MonoBehaviour
 
     Vector2Int startingCoord;
     MeshRenderer selfMesh;
-    bool isCorrect;
+    bool isCorrect = false;
 
     // metodo para iniciar a criacao do bloco, peca do puzzle
     public void Init (Vector2Int startingCoord, Texture2D image)
@@ -58,7 +58,7 @@ public class Block : MonoBehaviour
     }
 
     // metodo para tornar a peca cinza quando nao esta no local de origem
-    IEnumerator AnimateGrayscale (float duration, bool isGrayScale)
+    public IEnumerator AnimateGrayscale (float duration, bool isGrayScale)
     {
         float time = 0;
         while (duration > time)
@@ -86,7 +86,10 @@ public class Block : MonoBehaviour
     {
         if (coord == startingCoord && gameObject.activeSelf)
         {
-            StartCoroutine(AnimateGrayscale(.2f, false));
+            if (!isCorrect)
+            {
+                StartCoroutine(AnimateGrayscale(.2f, false));
+            }
             isCorrect = true;
         }
         else
