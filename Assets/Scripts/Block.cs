@@ -14,6 +14,7 @@ public class Block : MonoBehaviour
     MeshRenderer selfMesh;
     bool isCorrect;
 
+    // metodo para iniciar a criacao do bloco, peca do puzzle
     public void Init (Vector2Int startingCoord, Texture2D image)
     {
         selfMesh = GetComponent<MeshRenderer>();
@@ -25,11 +26,13 @@ public class Block : MonoBehaviour
         IsAtStartingCoord();
     }
 
+    //metodo para iniciar a rotina de movimentacao do bloco
     public void MoveToPosition(Vector2 target, float duration)
     {
         StartCoroutine(AnimateMove(target, duration));
     }
 
+    //metodo para detectar que o jogador clicou para mover a peca
     void OnMouseDown()
     {
         if (!IsPointerOverUIObject())
@@ -38,6 +41,7 @@ public class Block : MonoBehaviour
         }
     }
 
+    //metodo para criar a animacao do movimento da peca do puzzle
     IEnumerator AnimateMove(Vector2 target, float duration)
     {
         Vector2 initialPos = transform.position;
@@ -53,6 +57,7 @@ public class Block : MonoBehaviour
         OnFinishedMoving?.Invoke();
     }
 
+    // metodo para tornar a peca cinza quando nao esta no local de origem
     IEnumerator AnimateGrayscale (float duration, bool isGrayScale)
     {
         float time = 0;
@@ -70,12 +75,13 @@ public class Block : MonoBehaviour
         SetGrayscale(isGrayScale? 1:0);
     }
 
+    
     private void SetGrayscale (float amount = 1)
     {
         selfMesh.material.SetFloat("_GrayscaleAmount", amount);
     }
 
-
+    //metodo para verificar se o bloco esta na posicao correta
     public bool IsAtStartingCoord()
     {
         if (coord == startingCoord && gameObject.activeSelf)
@@ -95,6 +101,7 @@ public class Block : MonoBehaviour
 
     }
 
+    //metodo para verificar a posicao do bloco e do mouse
     private bool IsPointerOverUIObject()
     {
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
