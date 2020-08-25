@@ -1,6 +1,6 @@
 # ProjetoWGJ2020
 Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
-!(./Ella - WGJ 2020 - Imgur.jpg)
+![Ella](./Ella - WGJ 2020 - Imgur.jpg)
 
 
 Link para o jogo: https://songette.itch.io/ella
