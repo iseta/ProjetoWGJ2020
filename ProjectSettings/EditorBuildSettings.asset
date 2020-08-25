@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MVP/PosFase1.unity
     guid: a6c11907b161509488629d4c648643fc
   - enabled: 1
+    path: Assets/Scenes/MVP/TestGrey.unity
+    guid: 9bc00689cd2e5db48b71ce9ee6a3b57b
+  - enabled: 1
+    path: Assets/Scenes/MVP/TestColor.unity
+    guid: 44dc426c3e4cf684781b28fad1ff0612
+  - enabled: 1
     path: Assets/Scenes/MVP/CenaFeliz.unity
     guid: a4a6be2231feb2640bfdfe2d1f2fea9f
   - enabled: 1

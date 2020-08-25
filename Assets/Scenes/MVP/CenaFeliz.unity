@@ -1526,5 +1526,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 2094360128}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 6
+  sceneToLoadWhenDone: 8
   needsIntro: 1
