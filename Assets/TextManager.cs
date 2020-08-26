@@ -10,11 +10,15 @@ public class TextManager : MonoBehaviour
     [TextArea]
     public string[] lines;
     public UnityEvent[] events;
+
     public TextMeshProUGUI textComponent;
     public float speed; //Velocidade entre caracteres;
     public GameObject imgClick;
 
     public int currentLine = 0;
+
+    public float waitWhenDone;
+    public UnityEvent doWhenDone;
 
     private void Start()
     {
@@ -34,6 +38,10 @@ public class TextManager : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[currentLine];
+                if (currentLine == lines.Length - 1)
+                {
+                    StartCoroutine(WaitUntilDone());
+                }
             }
             else if(currentLine < lines.Length -1)
             {
@@ -43,7 +51,7 @@ public class TextManager : MonoBehaviour
                 {
                     events[currentLine].Invoke();
                 }
-                if (currentLine == lines.Length - 1) { imgClick.SetActive(false); };
+                if (currentLine == lines.Length - 1) { imgClick.SetActive(false);};
             }
         }
     }
@@ -56,6 +64,19 @@ public class TextManager : MonoBehaviour
         {
             yield return new WaitForSeconds(speed);
             textComponent.text += c;
+        }
+        if (currentLine == lines.Length -1)
+        {
+            StartCoroutine(WaitUntilDone());
+        }
+    }
+
+    IEnumerator WaitUntilDone()
+    {
+        if (doWhenDone != null && waitWhenDone != 0)
+        {
+            yield return new WaitForSeconds(waitWhenDone);
+            doWhenDone.Invoke();
         }
     }
 }

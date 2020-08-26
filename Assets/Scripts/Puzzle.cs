@@ -25,6 +25,7 @@ public class Puzzle : MonoBehaviour
 
     void Start()
     {
+        UIMaterial.SetFloat("_GrayscaleAmount", 1);
         CreatePuzzle();
     }
 
