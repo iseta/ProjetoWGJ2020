@@ -983,10 +983,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Artes</b>\r\nCamille (Cami)\r\nEliane Bittencourt (Eli)\r\nNicky Silva\r\n\r\n<b>\xC1udio
-    e Trilha</b>\r\nDaniele Dantas\r\nLina Melo\r\n\r\n<b>Conte\xFAdo</b>\r\nBianca\r\n\xCDris\r\n\r\n<b>Game
-    Design</b>\r\nJ\xE9ssica Della Flor\r\nNat\xE1lia Borges\r\n\r\n<b>Programa\xE7\xE3o</b>\r\nFernanda
-    Galindo\r\nIsabelle Brandelero (Iseta)\r\nShelly Gabriela Leal"
+  m_text: "<b>Arte</b>\r\nCamille Freitas (Cami)\r\nEliane Bittencourt (Eli)\r\nNicky
+    Silva\r\n\r\n<b>Conte\xFAdo</b>\r\nBianca Carvalho\r\n\xCDris Monteiro\r\n\r\n<b>Game
+    Design</b>\r\nJ\xE9ssica Della Flor\r\nNatalia Borges\r\n\r\n<b>Programa\xE7\xE3o</b>\r\nFernanda
+    Galindo\r\nIsabelle Brandelero (Iseta)\r\nShelly Gabriela Leal\r\n\r\n<b> QA</b>\r\nJessica
+    Fernandes\n\n<b>Sound Design</b>\r\nDaniele Dantas\r\nLina Melo\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1014,7 +1015,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18.7
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1031,7 +1032,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 274
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1055,12 +1056,12 @@ MonoBehaviour:
   m_margin: {x: 20, y: 20, z: 20, w: 0}
   m_textInfo:
     textComponent: {fileID: 1720554795}
-    characterCount: 266
+    characterCount: 314
     spriteCount: 0
-    spaceCount: 37
-    wordCount: 34
+    spaceCount: 44
+    wordCount: 39
     linkCount: 0
-    lineCount: 21
+    lineCount: 24
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
