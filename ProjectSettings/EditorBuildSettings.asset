@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MVP/SelecaoFases.unity
     guid: 607ceb1e7de760f468505234ca000c68
   - enabled: 1
-    path: Assets/Scenes/MVP/PrimeiraFase.unity
-    guid: 8f4f846ca2c0b7444a61f42961363328
+    path: Assets/Scenes/MVP/PrimeiraFase_ComEfeito.unity
+    guid: e64314f06db917949bd6ab02dc356cec
   - enabled: 1
     path: Assets/Scenes/MVP/PosFase1.unity
     guid: a6c11907b161509488629d4c648643fc

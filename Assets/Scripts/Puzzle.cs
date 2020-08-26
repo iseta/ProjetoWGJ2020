@@ -11,6 +11,7 @@ public class Puzzle : MonoBehaviour
     public int shuffleLength = 20;
     public float defaultMoveDuration = .2f;
     public float shuffleMoveDuration = .1f;
+    public Material UIMaterial;
 
     enum PuzzleState { Solved, Shuffling, InPlay };
     PuzzleState state;
@@ -172,5 +173,29 @@ public class Puzzle : MonoBehaviour
         emptyBlock.gameObject.SetActive(true);
         emptyBlock.StartCoroutine(emptyBlock.AnimateGrayscale(.2f, false));
         GetComponent<Animation>().Play("Vitoria");
+        StartCoroutine(AnimateGrayscale(1f, false));
+    }
+
+    public IEnumerator AnimateGrayscale(float duration, bool isGrayScale)
+    {
+        float time = 0;
+        while (duration > time)
+        {
+            float durationFrame = Time.deltaTime;
+            float ratio = time / duration;
+            float grayAmount = isGrayScale
+                ? ratio
+                : 1 - ratio;
+            SetGrayscale(grayAmount);
+            time += durationFrame;
+            yield return null;
+        }
+        SetGrayscale(isGrayScale ? 1 : 0);
+    }
+
+
+    private void SetGrayscale(float amount = 1)
+    {
+        UIMaterial.SetFloat("_GrayscaleAmount", amount);
     }
 }

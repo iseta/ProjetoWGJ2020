@@ -12,6 +12,7 @@ public class TextManager : MonoBehaviour
     public UnityEvent[] events;
     public TextMeshProUGUI textComponent;
     public float speed; //Velocidade entre caracteres;
+    public GameObject imgClick;
 
     public int currentLine = 0;
 
@@ -42,6 +43,7 @@ public class TextManager : MonoBehaviour
                 {
                     events[currentLine].Invoke();
                 }
+                if (currentLine == lines.Length - 1) { imgClick.SetActive(false); };
             }
         }
     }
