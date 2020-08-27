@@ -33,7 +33,16 @@ public class DialogoPorLinhas : MonoBehaviour
 
         foreach (string s in lines)
         {
-            textComponent.text += "\n" + s;
+
+            char[] chars = s.ToCharArray();
+            textComponent.text += "\n";
+            foreach (char c in chars)
+            {
+                yield return new WaitForSeconds(0.05f);
+                textComponent.text += c;
+            }
+
+            //textComponent.text += "\n" + s;
             yield return new WaitForSeconds(speed);
         }
 
