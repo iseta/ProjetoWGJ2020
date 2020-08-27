@@ -304,10 +304,10 @@ RectTransform:
   m_Father: {fileID: 2091540928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.42255, y: 0.001055776}
-  m_SizeDelta: {x: 140.155, y: 240.2238}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: -57.845, y: -56.512573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152835653
 MonoBehaviour:
@@ -358,7 +358,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 25.1
+  m_fontSize: 25.05
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 50e25747b08a37042876c74a4262d930, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af7cb7ca10225984592990957448f194, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2172,7 +2172,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.34
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2301,10 +2301,10 @@ RectTransform:
   m_Father: {fileID: 1814654623}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.73700005, y: 0.28646553}
-  m_AnchorMax: {x: 0.97636366, y: 0.7133621}
-  m_AnchoredPosition: {x: -0.65997314, y: 0}
-  m_SizeDelta: {x: 0.3098755, y: 3.383789}
+  m_AnchorMin: {x: 0.73700005, y: 0.14439654}
+  m_AnchorMax: {x: 0.97636366, y: 0.81884485}
+  m_AnchoredPosition: {x: -0.15533447, y: 0.5}
+  m_SizeDelta: {x: 0.3098755, y: 1.326355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091540929
 MonoBehaviour:

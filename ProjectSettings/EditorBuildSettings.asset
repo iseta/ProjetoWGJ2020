@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MVP/IntroTeste.unity
     guid: 614b9f4c3f84c60448f79500bcb62470
   - enabled: 1
-    path: Assets/Scenes/MVP/SelecaoFases.unity
-    guid: 607ceb1e7de760f468505234ca000c68
-  - enabled: 1
     path: Assets/Scenes/MVP/PrimeiraFase_ComEfeito.unity
     guid: e64314f06db917949bd6ab02dc356cec
   - enabled: 1
