@@ -352,7 +352,7 @@ MonoBehaviour:
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.3
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -797,20 +797,20 @@ MonoBehaviour:
     apenas f\xEDsica. E eu me recuso a ficar triste por causa dela!\r\n\nEstaremos
     <b>SEMPRE</b> juntas!\r\n"
   speed: 1
-  waitWhenDone: 3
+  waitWhenDone: 1
   doWhenDone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429720539}
-        m_MethodName: ExitOutro
-        m_Mode: 1
+      - m_Target: {fileID: 1039052716}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1885789168
 GameObject:
