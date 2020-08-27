@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: e73eb732fe537374a94f4130c92b8c11, type: 3}
   blocksPerLine: 3
-  shuffleLength: 5
+  shuffleLength: 10
   defaultMoveDuration: 0.2
   shuffleMoveDuration: 0.000001
   UIMaterial: {fileID: 2100000, guid: 9193c0b5e2331764ab4a01b9bfe5c02c, type: 2}
