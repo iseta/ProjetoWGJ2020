@@ -1979,7 +1979,7 @@ MonoBehaviour:
   lines:
   - "Espera\u2026 eu lembro desse dia! \xC9 minha melhor amiga na foto! E sou eu
     aqui do lado dela!\r "
-  - "Consigo at\xE9 ouvir nossas gargalhadas, sentir o calor do sol no meu rosto...\r"
+  - "Consigo at\xE9 ouvir nossas gargalhadas, sentir o calor do sol no meu rosto\u2026"
   events:
   - m_PersistentCalls:
       m_Calls: []

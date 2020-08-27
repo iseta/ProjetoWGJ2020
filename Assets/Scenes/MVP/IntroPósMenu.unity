@@ -2706,13 +2706,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Bom dia para mim\u2026 ou boa noite\u2026 n\xE3o sei mais a diferen\xE7a...\r"
-  - "Outro domingo pra n\xE3o fazer nada... ou ser\xE1 que \xE9... quarta-feira?"
-  - ...
+  - "Bom dia para mim\u2026 ou boa noite\u2026 n\xE3o sei mais a diferen\xE7a\u2026"
+  - "Outro domingo pra n\xE3o fazer nada\u2026 ou ser\xE1 que \xE9\u2026 quarta-feira?"
+  - "\u2026"
   - "O mundo mudou de repente e tudo ficou abstrato, como uma lembran\xE7a antiga
-    e melanc\xF3lica\u2026 "
-  - "Que marcador de p\xE1gina estranho. Parece at\xE9... uma fotografia? Queria
-    saber quem s\xE3o essas pessoas..."
+    e melanc\xF3lica\u2026"
+  - "Que marcador de p\xE1gina estranho. Parece at\xE9\u2026 uma fotografia? Queria
+    saber quem s\xE3o essas pessoas\u2026"
   events:
   - m_PersistentCalls:
       m_Calls: []
