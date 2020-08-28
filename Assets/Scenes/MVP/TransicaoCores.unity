@@ -1953,8 +1953,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1895806434}
-        m_MethodName: CheckClick
+      - m_Target: {fileID: 1895806431}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1996,6 +1996,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  soundDialogue: {fileID: 0}
   textComponent: {fileID: 1817903286}
   speed: 0.1
   imgClick: {fileID: 1209459926}
@@ -2004,8 +2005,8 @@ MonoBehaviour:
   doWhenDone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1492172377}
-        m_MethodName: ExitOutro
+      - m_Target: {fileID: 1492172375}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2015,6 +2016,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  deleteText: 0
+  beforeCoroutine: 
 --- !u!114 &1895806435
 MonoBehaviour:
   m_ObjectHideFlags: 0
