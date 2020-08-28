@@ -3,7 +3,6 @@ using System.Collections;
 
 public class MenuAppearScript : MonoBehaviour
 {
-
     public GameObject menu; // Assign in inspector
     private bool isShowing;
 

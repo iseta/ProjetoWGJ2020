@@ -20,6 +20,10 @@ public class TextManager : MonoBehaviour
     public float waitWhenDone;
     public UnityEvent doWhenDone;
 
+    public bool deleteText;
+
+    public string beforeCoroutine;
+
     private void Start()
     {
         StartTyping();
@@ -37,7 +41,25 @@ public class TextManager : MonoBehaviour
             if (textComponent.text != lines[currentLine])
             {
                 StopAllCoroutines();
-                textComponent.text = lines[currentLine];
+                if (!deleteText)
+                {
+                    textComponent.text = beforeCoroutine + "\n" + lines[currentLine];
+                    if (currentLine < lines.Length - 1)
+                    {
+                        currentLine++;
+                        beforeCoroutine = textComponent.text;
+                        StartCoroutine(TypeWriter(lines[currentLine]));
+                        if (events[currentLine] != null)
+                        {
+                            events[currentLine].Invoke();
+                        }
+                    }
+                    if (currentLine == lines.Length - 1) { imgClick.SetActive(false); };
+                }
+                else
+                {
+                    textComponent.text = lines[currentLine];
+                }
                 if (currentLine == lines.Length - 1)
                 {
                     StartCoroutine(WaitUntilDone());
@@ -46,6 +68,7 @@ public class TextManager : MonoBehaviour
             else if(currentLine < lines.Length -1)
             {
                 currentLine++;
+                beforeCoroutine = textComponent.text;
                 StartCoroutine(TypeWriter(lines[currentLine]));
                 if (events[currentLine] != null)
                 {
@@ -58,15 +81,29 @@ public class TextManager : MonoBehaviour
 
     IEnumerator TypeWriter(string line)
     {
-        textComponent.text = "";
+        if (!deleteText)
+        {
+            textComponent.text = beforeCoroutine + "\n";
+        }
+        else
+        {
+            textComponent.text = "";
+        }
         char[] chars = line.ToCharArray();
         foreach(char c in chars)
         {
             yield return new WaitForSeconds(speed);
             textComponent.text += c;
         }
-        if (currentLine == lines.Length -1)
+        if (!deleteText && currentLine < lines.Length - 1)
         {
+            currentLine++;
+            beforeCoroutine = textComponent.text;
+            StartCoroutine(TypeWriter(lines[currentLine]));
+        }
+        if (currentLine == lines.Length - 1)
+        {
+            imgClick.SetActive(false);
             StartCoroutine(WaitUntilDone());
         }
     }

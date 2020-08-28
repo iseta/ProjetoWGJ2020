@@ -7,7 +7,6 @@ using UnityEngine.Events;
 
 public class DialogoPorLinhas : MonoBehaviour
 {
-    int currentLine;
     TextMeshProUGUI textComponent;
 
     [TextArea]
