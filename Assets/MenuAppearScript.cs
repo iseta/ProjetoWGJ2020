@@ -3,15 +3,36 @@ using System.Collections;
 
 public class MenuAppearScript : MonoBehaviour
 {
-    public GameObject menu; // Assign in inspector
-    private bool isShowing;
+    public Animator menu; // Assign in inspector
+    public AudioSource effect;
+    public bool isShowing;
 
     void Update()
     {
         if (Input.GetKeyDown("escape"))
         {
-            isShowing = !isShowing;
-            menu.SetActive(isShowing);
+            if (!isShowing)
+            {
+                ShowExitMenu();
+            }
+            else
+            {
+                HideExitMenu();
+            }
         }
+    }
+
+    public void ShowExitMenu()
+    {
+        isShowing = true;
+        menu.Play("IntroExit");
+        effect.Play();
+    }
+
+    public void HideExitMenu()
+    {
+        isShowing = false;
+        menu.Play("OutroExit");
+        effect.Play();
     }
 }
