@@ -41,25 +41,7 @@ public class TextManager : MonoBehaviour
             if (textComponent.text != lines[currentLine])
             {
                 StopAllCoroutines();
-                if (!deleteText)
-                {
-                    textComponent.text = beforeCoroutine + "\n" + lines[currentLine];
-                    if (currentLine < lines.Length - 1)
-                    {
-                        currentLine++;
-                        beforeCoroutine = textComponent.text;
-                        StartCoroutine(TypeWriter(lines[currentLine]));
-                        if (events[currentLine] != null)
-                        {
-                            events[currentLine].Invoke();
-                        }
-                    }
-                    if (currentLine == lines.Length - 1) { imgClick.SetActive(false); };
-                }
-                else
-                {
-                    textComponent.text = lines[currentLine];
-                }
+                textComponent.text = lines[currentLine];
                 if (currentLine == lines.Length - 1)
                 {
                     StartCoroutine(WaitUntilDone());
@@ -81,21 +63,14 @@ public class TextManager : MonoBehaviour
 
     IEnumerator TypeWriter(string line)
     {
-        if (!deleteText)
-        {
-            textComponent.text = beforeCoroutine + "\n";
-        }
-        else
-        {
-            textComponent.text = "";
-        }
+        textComponent.text = "";
         char[] chars = line.ToCharArray();
         foreach(char c in chars)
         {
             yield return new WaitForSeconds(speed);
             textComponent.text += c;
         }
-        if (!deleteText && currentLine < lines.Length - 1)
+        if (currentLine < lines.Length - 1)
         {
             currentLine++;
             beforeCoroutine = textComponent.text;

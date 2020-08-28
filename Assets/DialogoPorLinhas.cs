@@ -14,10 +14,35 @@ public class DialogoPorLinhas : MonoBehaviour
     public float speed;
     public float waitWhenDone;
     public UnityEvent doWhenDone;
+    public GameObject imgClick;
+    string[] lines;
+    string beforeCoroutine;
+    int currentLine = 0;
 
     private void Awake()
     {
         textComponent = GetComponent<TextMeshProUGUI>();
+        lines = txt.Split('\n');
+    }
+
+    public void CheckClick()
+    {
+        if (currentLine < lines.Length)
+        {
+            StopAllCoroutines();
+            textComponent.text = beforeCoroutine + lines[currentLine] + "\n\n";
+            if (currentLine < lines.Length - 1)
+            {
+                currentLine++;
+                beforeCoroutine = textComponent.text;
+                StartCoroutine(TypeWriter(lines[currentLine]));
+            }
+            if (currentLine == lines.Length - 1) {
+                Debug.Log("entrou na linha final");
+                imgClick.SetActive(false);
+                StartCoroutine(WaitUntilDone());
+            };
+        }
     }
 
     public void StartTyping()
@@ -27,25 +52,38 @@ public class DialogoPorLinhas : MonoBehaviour
 
     IEnumerator TypeWriter(string line)
     {
-        string[] lines = txt.Split('\n');
-        textComponent.text = "";
+        float colorFloat = 0.1f;
+        string aux = textComponent.text;
 
-        foreach (string s in lines)
+        while (colorFloat < 1.0f)
         {
-
-            char[] chars = s.ToCharArray();
-            textComponent.text += "\n";
-            foreach (char c in chars)
-            {
-                yield return new WaitForSeconds(0.05f);
-                textComponent.text += c;
-            }
-
-            //textComponent.text += "\n" + s;
-            yield return new WaitForSeconds(speed);
+            colorFloat += Time.deltaTime * 1f;
+            int colorInt = (int)(Mathf.Lerp(0.0f, 1.0f, colorFloat) * 255.0f);
+            textComponent.text = aux + "<color=#000000" + string.Format("{0:X}", colorInt) + ">" + lines[currentLine] + "</color>" +"\n\n";
+            yield return null;
         }
 
-        yield return new WaitForSeconds(waitWhenDone);
-        doWhenDone.Invoke();
+        yield return new WaitForSeconds(speed);
+        if (currentLine < lines.Length - 1)
+        {
+            currentLine++;
+            beforeCoroutine = textComponent.text;
+            StartCoroutine(TypeWriter(lines[currentLine]));
+            if (currentLine == lines.Length - 1)
+            {
+                imgClick.SetActive(false);
+                yield return new WaitForSeconds(waitWhenDone);
+                doWhenDone.Invoke();
+            }
+        }
+    }
+
+    IEnumerator WaitUntilDone()
+    {
+        if (doWhenDone != null && waitWhenDone != 0)
+        {
+            yield return new WaitForSeconds(waitWhenDone);
+            doWhenDone.Invoke();
+        }
     }
 }
