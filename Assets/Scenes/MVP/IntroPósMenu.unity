@@ -2743,6 +2743,8 @@ MonoBehaviour:
   doWhenDone:
     m_PersistentCalls:
       m_Calls: []
+  deleteText: 0
+  beforeCoroutine: 
 --- !u!114 &1978598260
 MonoBehaviour:
   m_ObjectHideFlags: 0
