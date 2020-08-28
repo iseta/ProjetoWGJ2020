@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 3e6375d2c4610dc42a1b8fa4011fbdb5, type: 3}
   blocksPerLine: 3
-  shuffleLength: 10
+  shuffleLength: 8
   defaultMoveDuration: 0.2
   shuffleMoveDuration: 0.000001
   UIMaterial: {fileID: 2100000, guid: 9193c0b5e2331764ab4a01b9bfe5c02c, type: 2}
@@ -1566,7 +1566,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9f99b82f77380b94794eaa60dfe86841, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2590,6 +2590,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 443606784}
+  effect: {fileID: 0}
+  isShowing: 0
+  backgroundFade: {fileID: 0}
 --- !u!1 &1822257099
 GameObject:
   m_ObjectHideFlags: 0

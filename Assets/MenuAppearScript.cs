@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MenuAppearScript : MonoBehaviour
 {
     public Animator menu; // Assign in inspector
     public AudioSource effect;
     public bool isShowing;
+    public Image backgroundFade;
 
     void Update()
     {
@@ -27,6 +29,7 @@ public class MenuAppearScript : MonoBehaviour
         isShowing = true;
         menu.Play("IntroExit");
         effect.Play();
+        backgroundFade.raycastTarget = true;
     }
 
     public void HideExitMenu()
@@ -34,5 +37,6 @@ public class MenuAppearScript : MonoBehaviour
         isShowing = false;
         menu.Play("OutroExit");
         effect.Play();
+        backgroundFade.raycastTarget = false;
     }
 }
