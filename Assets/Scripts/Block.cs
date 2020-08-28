@@ -13,7 +13,6 @@ public class Block : MonoBehaviour
     Vector2Int startingCoord;
     MeshRenderer selfMesh;
     bool isCorrect = false;
-    AudioSource asMove;
 
     // metodo para iniciar a criacao do bloco, peca do puzzle
     public void Init (Vector2Int startingCoord, Texture2D image)
@@ -21,11 +20,8 @@ public class Block : MonoBehaviour
         selfMesh = GetComponent<MeshRenderer>();
         this.startingCoord = startingCoord;
         coord = startingCoord;
-
         selfMesh.material = Resources.Load<Material>("Block");
         selfMesh.material.mainTexture = image;
-
-        asMove = GameObject.Find("ASMove").GetComponent<AudioSource>();
         IsAtStartingCoord();
     }
 
@@ -56,7 +52,6 @@ public class Block : MonoBehaviour
             transform.position = Vector2.Lerp (initialPos, target, percent);
             yield return null;
         }
-        asMove.Play();
         IsAtStartingCoord();
         OnFinishedMoving?.Invoke();
     }
