@@ -11,6 +11,8 @@ public class TextManager : MonoBehaviour
     public string[] lines;
     public UnityEvent[] events;
 
+    public AudioSource soundDialogue;
+
     public TextMeshProUGUI textComponent;
     public float speed; //Velocidade entre caracteres;
     public GameObject imgClick;
@@ -49,6 +51,7 @@ public class TextManager : MonoBehaviour
             }
             else if(currentLine < lines.Length -1)
             {
+                soundDialogue.Play();
                 currentLine++;
                 beforeCoroutine = textComponent.text;
                 StartCoroutine(TypeWriter(lines[currentLine]));
@@ -70,12 +73,7 @@ public class TextManager : MonoBehaviour
             yield return new WaitForSeconds(speed);
             textComponent.text += c;
         }
-        if (currentLine < lines.Length - 1)
-        {
-            currentLine++;
-            beforeCoroutine = textComponent.text;
-            StartCoroutine(TypeWriter(lines[currentLine]));
-        }
+       
         if (currentLine == lines.Length - 1)
         {
             imgClick.SetActive(false);

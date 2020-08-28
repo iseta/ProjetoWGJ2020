@@ -12,6 +12,7 @@ public class Puzzle : MonoBehaviour
     public float defaultMoveDuration = .2f;
     public float shuffleMoveDuration = .1f;
     public Material UIMaterial;
+    public AudioSource moveSound;
 
     enum PuzzleState { Solved, Shuffling, InPlay };
     PuzzleState state;
@@ -103,6 +104,10 @@ public class Puzzle : MonoBehaviour
             emptyBlock.transform.position = blockToMove.transform.position;
             blockToMove.MoveToPosition(targetPosition, duration);
             blockIsMoving = true;
+            if(state != PuzzleState.Shuffling)
+            {
+                moveSound.Play();
+            }
         }
     }
 
