@@ -5,22 +5,50 @@ using UnityEngine;
 public class AudioControls : MonoBehaviour
 {
     public AudioSource self;
+    static bool isMute;
+    public GameObject btnSound, btnMute;
+
+    private void Start()
+    {
+        Debug.Log(isMute);
+    }
+
+    public void StartCheck(bool i)
+    {
+        if (i && !isMute)
+        {
+            btnMute.SetActive(true);
+            btnSound.SetActive(false);
+            StartCoroutine(FadeIn());
+        }
+        else if(!isMute)
+        {
+            btnMute.SetActive(false);
+            btnSound.SetActive(true);
+            StartCoroutine(FadeOut());
+        }
+    }
 
     public void AdjustVolume(bool i)
     {
-        if (i)
+        if (i && !isMute)
         {
             StartCoroutine(FadeIn());
         }
-        else
+        else if(!i)
         {
             StartCoroutine(FadeOut());
         }
     }
 
+    public void setMute(bool muteValue)
+    {
+        isMute = muteValue;
+    }
+
     private IEnumerator FadeIn()
     {
-        float volume = 0.5f;
+        float volume = self.volume;
         float volumeEndValue = 0;
         while (volume >= volumeEndValue)
         {
@@ -32,12 +60,16 @@ public class AudioControls : MonoBehaviour
 
     private IEnumerator FadeOut()
     {
-        float volume = 0;
+        float volume = self.volume;
         float volumeEndValue = 0.5f;
         while (volume <= volumeEndValue)
         {
             SetSoundVolume(ref volume, 1);
             yield return null;
+        }
+        if (!self.isPlaying)
+        {
+            self.Play();
         }
         self.volume = volumeEndValue;
     }

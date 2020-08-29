@@ -1224,6 +1224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 477203846}
+  btnSound: {fileID: 0}
+  btnMute: {fileID: 0}
 --- !u!82 &477203846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1672,7 +1674,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &592950435
 RectTransform:
@@ -2156,6 +2158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 916087680}
+  btnSound: {fileID: 0}
+  btnMute: {fileID: 0}
 --- !u!82 &916087680
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2655,19 +2659,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 8595053240378034852}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 8595053240378034854}
-        m_MethodName: AdjustVolume
+        m_MethodName: StartCheck
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2791,7 +2784,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1578730567
 RectTransform:
@@ -3984,7 +3977,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 7535747771589673207}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4021,8 +4014,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: AdjustVolume
+      - m_Target: {fileID: 8595053240378034854}
+        m_MethodName: setMute
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4144,8 +4137,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: AdjustVolume
+      - m_Target: {fileID: 8595053240378034854}
+        m_MethodName: setMute
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4473,6 +4466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 8595053240378034852}
+  btnSound: {fileID: 5308188018341107232}
+  btnMute: {fileID: 8073848243901068830}
 --- !u!224 &8870518515155925452
 RectTransform:
   m_ObjectHideFlags: 0
