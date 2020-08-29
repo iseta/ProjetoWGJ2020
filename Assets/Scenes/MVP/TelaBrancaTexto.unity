@@ -628,10 +628,10 @@ RectTransform:
   m_Father: {fileID: 116153298}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
-  m_AnchorMin: {x: 0.94875014, y: 0.061564382}
-  m_AnchorMax: {x: 0.9862501, y: 0.31621784}
-  m_AnchoredPosition: {x: 0.00024414062, y: -62.58999}
-  m_SizeDelta: {x: 0.53759766, y: -85.40137}
+  m_AnchorMin: {x: 0.94875014, y: 0.017111111}
+  m_AnchorMax: {x: 0.98750013, y: 0.083444454}
+  m_AnchoredPosition: {x: -0.49975586, y: -0.090026855}
+  m_SizeDelta: {x: -0.46240234, y: -0.4013672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146407746
 MonoBehaviour:
@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75500005, y: 0.023554958}
   m_AnchorMax: {x: 0.98875004, y: 0.12122223}
-  m_AnchoredPosition: {x: 231.7, y: -0.49002075}
+  m_AnchoredPosition: {x: 231.69995, y: -0.48999023}
   m_SizeDelta: {x: -2.8284912, y: -6.17276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261437463
@@ -965,7 +965,6 @@ GameObject:
   - component: {fileID: 1674090823}
   - component: {fileID: 1674090825}
   - component: {fileID: 1674090824}
-  - component: {fileID: 1674090826}
   - component: {fileID: 1674090828}
   - component: {fileID: 1674090827}
   m_Layer: 5
@@ -1114,44 +1113,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674090822}
   m_CullTransparentMesh: 0
---- !u!114 &1674090826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674090822}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c83bc17939aa55945860a50aa55e167e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - "Como pude esquecer? Como pude esquecer de quem eu sou?\r"
-  - "Me sentia t\xE3o sozinha que esqueci de todas as lembran\xE7as gostosas e os
-    amigos incr\xEDveis que eu tenho!"
-  - "N\xF3s estamos afastadas agora, mas a dist\xE2ncia \xE9 apenas f\xEDsica. E
-    eu me recuso a ficar triste por causa dela!"
-  - "Estaremos SEMPRE juntas!\r"
-  events:
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  textComponent: {fileID: 1674090824}
-  speed: 0.2
-  imgClick: {fileID: 1146407744}
-  currentLine: 0
-  waitWhenDone: 0
-  doWhenDone:
-    m_PersistentCalls:
-      m_Calls: []
-  deleteText: 0
-  beforeCoroutine: 
 --- !u!114 &1674090827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1224,7 +1185,7 @@ MonoBehaviour:
     f\xEDsica. E eu me recuso a ficar triste por causa dela!\r\nEstaremos <b>SEMPRE</b>
     juntas!"
   speed: 0.5
-  waitWhenDone: 0.1
+  waitWhenDone: 5
   doWhenDone:
     m_PersistentCalls:
       m_Calls:
@@ -1240,8 +1201,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   imgClick: {fileID: 1146407744}
-  lines: []
-  currentLine: 0
 --- !u!1 &1885789168
 GameObject:
   m_ObjectHideFlags: 0
