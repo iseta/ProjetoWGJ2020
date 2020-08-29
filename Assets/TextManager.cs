@@ -26,11 +26,6 @@ public class TextManager : MonoBehaviour
 
     public string beforeCoroutine;
 
-    private void Start()
-    {
-        StartTyping();
-    }
-
     public void StartTyping()
     {
         StartCoroutine(TypeWriter(lines[currentLine]));
@@ -62,6 +57,11 @@ public class TextManager : MonoBehaviour
                 if (currentLine == lines.Length - 1) { imgClick.SetActive(false);};
             }
         }
+    }
+
+    public void StopTyping()
+    {
+        StopAllCoroutines();
     }
 
     IEnumerator TypeWriter(string line)
