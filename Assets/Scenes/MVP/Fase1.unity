@@ -1180,7 +1180,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Deseja recome\xE7ar o quebra-cabe\xE7as?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 78cc83357eb037049bdb63aa5ebf1fb1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2056273c514b2e944a63acd67dccf6fe, type: 2}
   m_sharedMaterial: {fileID: -2364847811858682129, guid: 78cc83357eb037049bdb63aa5ebf1fb1,
     type: 2}
   m_fontSharedMaterials: []
@@ -1207,8 +1207,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 33
-  m_fontSizeBase: 33
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
