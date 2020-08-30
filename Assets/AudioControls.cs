@@ -7,10 +7,11 @@ public class AudioControls : MonoBehaviour
     public AudioSource self;
     static bool isMute = false;
     public GameObject btnSound, btnMute;
+    public AudioListener cameraListener;
 
-    private void Start()
+    private void Awake()
     {
-        Debug.Log(isMute);
+        cameraListener.enabled = !isMute;
     }
 
     public void StartCheck(bool i)
@@ -44,6 +45,7 @@ public class AudioControls : MonoBehaviour
     public void setMute(bool muteValue)
     {
         isMute = muteValue;
+        cameraListener.enabled = !isMute;
     }
 
     private IEnumerator FadeIn()

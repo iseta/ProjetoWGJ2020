@@ -1258,6 +1258,7 @@ MonoBehaviour:
   self: {fileID: 477203846}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 650727323}
 --- !u!82 &477203846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2545,6 +2546,7 @@ MonoBehaviour:
   self: {fileID: 916087680}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 650727323}
 --- !u!82 &916087680
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2667,7 +2669,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183802571}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1183802573
 Camera:
   m_ObjectHideFlags: 0
@@ -2678,7 +2680,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 0.8352941, b: 0.8784314, a: 0}
+  m_BackGroundColor: {r: 0.9843138, g: 0.69803923, b: 0.77647066, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2781,7 +2783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.94875014, y: 0.061564382}
   m_AnchorMax: {x: 0.9862501, y: 0.31621784}
-  m_AnchoredPosition: {x: 0, y: 0.90001297}
+  m_AnchoredPosition: {x: 0, y: 0.90000916}
   m_SizeDelta: {x: 0.53759766, y: 0.19223022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209459928
@@ -3023,6 +3025,7 @@ MonoBehaviour:
   self: {fileID: 1389772608}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 650727323}
 --- !u!82 &1389772608
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4657,6 +4660,7 @@ MonoBehaviour:
   self: {fileID: 2008192045}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 650727323}
 --- !u!82 &2008192045
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5394,6 +5398,7 @@ MonoBehaviour:
   self: {fileID: 8595053240378034852}
   btnSound: {fileID: 5308188018341107232}
   btnMute: {fileID: 8073848243901068830}
+  cameraListener: {fileID: 650727323}
 --- !u!224 &8870518515155925452
 RectTransform:
   m_ObjectHideFlags: 0

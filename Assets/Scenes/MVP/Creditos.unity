@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18.45
+  m_fontSize: 20.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1744,6 +1744,7 @@ MonoBehaviour:
   self: {fileID: 8595053240195569994}
   btnSound: {fileID: 5308188018154407374}
   btnMute: {fileID: 8073848244117087728}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &8595053240195569994
 AudioSource:
   m_ObjectHideFlags: 0
