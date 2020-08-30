@@ -27,14 +27,15 @@ QA: Jessica Fernandes.
 
 **Sound Design/ SoundTrack**
 
-Daniele Dantas
+Daniele Dantas: https://soundcloud.com/daniele-s-dantas
+
 1 - Melancolia (MENU) - Ella soundtrack 
 
 2 - Interlúdio - Ella soundtrack
 
 3 - Florear (PUZZLE 1) - Ella soundtrack
 
-Lina Melo
+Lina Melo: https://soundcloud.com/eulina-melo
 
 4 - Memórias (PUZZLE 2) 
 
