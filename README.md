@@ -12,40 +12,18 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 **Créditos**
 
-Arte:
-
-<a href="https://www.artstation.com/camicadf" target="_blank">Camille Freitas (Cami)</a>
-
-<a href="https://www.artstation.com/elyanee" target="_blank">Eliane Bittencourt (Eli)</a>
-
-<a href="https://www.behance.net/nickysplan" target="_blank">Nicky Silv</a>
+Arte: <a href="https://www.artstation.com/camicadf" target="_blank">Camille Freitas (Cami)</a> , <a href="https://www.artstation.com/elyanee" target="_blank">Eliane Bittencourt (Eli)</a>, <a href="https://www.behance.net/nickysplan" target="_blank">Nicky Silv</a>
 
 
-Conteúdo: 
+Conteúdo: <a href="https://www.linkedin.com/in/carvalhoabianca/" target="_blank">Bianca Carvalho </a>
+, <a href="https://br.linkedin.com/in/%C3%ADris-monteiro-305705197" target="_blank">Íris Monteiro</a>
 
- <a href="https://www.linkedin.com/in/carvalhoabianca/" target="_blank">Bianca Carvalho </a>
+Game Design: <a href="https://jessicadellaflor.wixsite.com/home" target="_blank">Jéssica Della Flor</a>, <a href="https://www.linkedin.com/in/ntlborges/" target="_blank">Natalia Borges</a>
 
- <a href="https://br.linkedin.com/in/%C3%ADris-monteiro-305705197" target="_blank">Íris Monteiro</a>
+Programação: <a href="http://fernandagalindo.net/" target="_blank">Fernanda Galindo</a>, <a href="https://iseta.zyrosite.com/" target="_blank">Isabelle Brandelero (Iseta)</a>,
+<a href="https://br.linkedin.com/in/shelly-leal" target="_blank">Shelly Gabriela Leal</a>
 
-Game Design: 
-
- <a href="https://jessicadellaflor.wixsite.com/home" target="_blank">Jéssica Della Flor</a>
-
- <a href="https://www.linkedin.com/in/ntlborges/" target="_blank">Natalia Borges</a>
-
-Programação: 
-
- <a href="http://fernandagalindo.net/" target="_blank">Fernanda Galindo</a>
-
- <a href="https://iseta.zyrosite.com/" target="_blank">Isabelle Brandelero (Iseta)</a>
-
- <a href="https://br.linkedin.com/in/shelly-leal" target="_blank">Shelly Gabriela Leal</a>
-
-Sound Design: 
-
- <a href="https://soundcloud.com/daniele-s-dantas" target="_blank">Daniele Dantas</a>
-
- <a href="https://soundcloud.com/eulina-melo" target="_blank">Lina Melo</a>
+Sound Design: <a href="https://soundcloud.com/daniele-s-dantas" target="_blank">Daniele Dantas</a>, <a href="https://soundcloud.com/eulina-melo" target="_blank">Lina Melo</a>
 
 
 **Sound Design/ SoundTrack**
