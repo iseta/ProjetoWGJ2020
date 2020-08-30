@@ -358,7 +358,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "VER CR\xC9DITOS"
+  m_Text: SEE CREDITS
 --- !u!222 &796078863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1277,7 +1277,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pr\xF3ximo"
+  m_Text: Next
 --- !u!222 &1885789171
 CanvasRenderer:
   m_ObjectHideFlags: 0
