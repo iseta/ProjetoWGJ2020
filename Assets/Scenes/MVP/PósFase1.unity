@@ -2781,7 +2781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.94875014, y: 0.061564382}
   m_AnchorMax: {x: 0.9862501, y: 0.31621784}
-  m_AnchoredPosition: {x: 0, y: 0.8999939}
+  m_AnchoredPosition: {x: 0, y: 0.8999977}
   m_SizeDelta: {x: 0.53759766, y: 0.19223022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209459928
@@ -4408,7 +4408,7 @@ MonoBehaviour:
   lines:
   - "Espera\u2026 eu lembro desse dia! \xC9 minha melhor amiga na foto! E sou eu
     aqui do lado dela!\r "
-  - ...
+  - "\u2026"
   - "Consigo at\xE9 ouvir nossas gargalhadas, sentir o calor do sol no meu rosto\u2026"
   events:
   - m_PersistentCalls:
