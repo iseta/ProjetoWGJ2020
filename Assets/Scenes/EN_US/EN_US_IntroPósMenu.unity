@@ -4243,7 +4243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - "Good morning for me\u2026 or\u2026 good night\u2026 I don\u2019t know the difference
-    anymore...\r"
+    anymore\u2026"
   - "Another boring Sunday\u2026 or is it\u2026 Wednesday\u2026?"
   - "The world changed so suddenly, and things outside seem like a distant and melancholic
     memory\u2026"
