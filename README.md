@@ -12,8 +12,6 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 **Créditos**
 
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
-
 Arte: <a href="https://www.artstation.com/camicadf" target="_blank">Camille Freitas (Cami)</a> , <a href="https://www.artstation.com/elyanee" target="_blank">Eliane Bittencourt (Eli)</a>, <a href="https://www.behance.net/nickysplan" target="_blank">Nicky Silv</a>
 
 
