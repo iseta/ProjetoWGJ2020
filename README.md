@@ -11,13 +11,23 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 
 **Sons utilizados no jogo**
+
 https://freesound.org/
 
 Piscina: https://freesound.org/people/FreqMan/sounds/42957/
+
 Dormindo: https://freesound.org/people/JuanMartos/sounds/176696/
-Páginas livro: https://freesound.org/people/DelonOW/sounds/491090/,
+
+Páginas livro: https://freesound.org/people/DelonOW/sounds/491090/
+
 Pássaros: https://freesound.org/people/hargissssound/sounds/345851/
+
 Passos: https://freesound.org/people/jskrundz/sounds/435691/
+
 Levantando da cama: https://freesound.org/people/avakas/sounds/172365/
+
 Abrir gaveta:https://freesound.org/people/AdrianoAnjos/sounds/503174/
+
 Sorrisos: https://freesound.org/people/Kalibrk/sounds/433921/
+
+
