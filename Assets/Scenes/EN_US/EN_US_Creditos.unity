@@ -336,16 +336,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395000016}
-  m_LocalRotation: {x: -0, y: -0, z: -0.14753857, w: 0.98905635}
+  m_LocalRotation: {x: 0, y: 0, z: -0.043619405, w: 0.9990483}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.09234}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.09234}
   m_Children: []
   m_Father: {fileID: 2081133384}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -16.969}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.699997, y: -1198.3}
+  m_AnchoredPosition: {x: -134, y: -1147}
   m_SizeDelta: {x: 184.51584, y: 219.83362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395000018
@@ -957,13 +957,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1055,16 +1055,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699665484}
-  m_LocalRotation: {x: -0, y: -0, z: 0.24489808, w: 0.9695488}
+  m_LocalRotation: {x: 0, y: 0, z: 0.043619405, w: 0.9990483}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.09234}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.09234}
   m_Children: []
   m_Father: {fileID: 2081133384}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.352001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: -1050}
+  m_AnchoredPosition: {x: 139, y: -1213}
   m_SizeDelta: {x: 184.51584, y: 219.83362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699665486
@@ -1208,10 +1208,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
-  m_fontSizeBase: 36
+  m_fontSize: 38
+  m_fontSizeBase: 38
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 200
   m_fontStyle: 0
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 244
+  m_firstOverflowCharacterIndex: 78
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1254,7 +1254,7 @@ MonoBehaviour:
     spaceCount: 44
     wordCount: 39
     linkCount: 0
-    lineCount: 24
+    lineCount: 30
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
