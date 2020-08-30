@@ -1893,6 +1893,7 @@ MonoBehaviour:
   self: {fileID: 2079399088}
   btnSound: {fileID: 1636502490}
   btnMute: {fileID: 740855941}
+  cameraListener: {fileID: 519420029}
 --- !u!1 &2080084549
 GameObject:
   m_ObjectHideFlags: 0

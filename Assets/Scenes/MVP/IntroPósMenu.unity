@@ -373,6 +373,7 @@ MonoBehaviour:
   self: {fileID: 106440088}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &106440088
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1157,6 +1158,7 @@ MonoBehaviour:
   self: {fileID: 401627793}
   btnSound: {fileID: 4534486570468181525}
   btnMute: {fileID: 525743928442332715}
+  cameraListener: {fileID: 1405975277}
 --- !u!1 &571180660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,6 +1353,7 @@ MonoBehaviour:
   self: {fileID: 572803655}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &572803655
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3548,6 +3551,7 @@ MonoBehaviour:
   self: {fileID: 1545298574}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &1545298574
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3931,6 +3935,7 @@ MonoBehaviour:
   self: {fileID: 1632573388}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &1632573388
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4074,6 +4079,7 @@ MonoBehaviour:
   self: {fileID: 1703824714}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 1405975277}
 --- !u!82 &1703824714
 AudioSource:
   m_ObjectHideFlags: 0

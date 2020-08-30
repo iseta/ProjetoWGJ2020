@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 3e6375d2c4610dc42a1b8fa4011fbdb5, type: 3}
   blocksPerLine: 3
-  shuffleLength: 8
+  shuffleLength: 6
   defaultMoveDuration: 0.2
   shuffleMoveDuration: 0.000001
   UIMaterial: {fileID: 2100000, guid: 9193c0b5e2331764ab4a01b9bfe5c02c, type: 2}
@@ -1311,6 +1311,7 @@ MonoBehaviour:
   self: {fileID: 1217463310}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 519420029}
 --- !u!82 &1217463310
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1723,6 +1724,7 @@ MonoBehaviour:
   self: {fileID: 1357823141}
   btnSound: {fileID: 0}
   btnMute: {fileID: 0}
+  cameraListener: {fileID: 519420029}
 --- !u!82 &1357823141
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3483,6 +3485,7 @@ MonoBehaviour:
   self: {fileID: 8595053240046812010}
   btnSound: {fileID: 5308188018018232302}
   btnMute: {fileID: 8073848243443763152}
+  cameraListener: {fileID: 519420029}
 --- !u!82 &8595053240046812010
 AudioSource:
   m_ObjectHideFlags: 0
