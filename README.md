@@ -12,22 +12,44 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 **Créditos**
 
-Arte: Camille Freitas (Cami), Eliane Bittencourt (Eli), Nicky Silva.
+Arte:
+<a href="https://www.artstation.com/camicadf" target="_blank">Camille Freitas (Cami)</a>
 
-Conteúdo: Bianca Carvalho, Íris Monteiro.
+<a href="https://www.artstation.com/elyanee" target="_blank">Eliane Bittencourt (Eli)</a>
 
-Game Design: Jéssica Della Flor, Natalia Borges.
+<a href="https://www.behance.net/nickysplan" target="_blank">Nicky Silv</a>
 
-Programação: Fernanda Galindo, Isabelle Brandelero (Iseta), Shelly Gabriela Leal.
 
-Sound Design: Daniele Dantas, Lina Melo.
+Conteúdo: 
 
-QA: Jessica Fernandes.
+ <a href="https://www.linkedin.com/in/carvalhoabianca/" target="_blank">Bianca Carvalho </a>
+
+ <a href="https://br.linkedin.com/in/%C3%ADris-monteiro-305705197" target="_blank">Íris Monteiro</a>
+
+Game Design: 
+
+ <a href="https://jessicadellaflor.wixsite.com/home" target="_blank">Jéssica Della Flor</a>
+
+ <a href="https://www.linkedin.com/in/ntlborges/" target="_blank">Natalia Borges</a>
+
+Programação: 
+
+ <a href="http://fernandagalindo.net/" target="_blank">Fernanda Galindo</a>
+
+ <a href="https://iseta.zyrosite.com/" target="_blank">Isabelle Brandelero (Iseta)</a>
+
+ <a href="https://br.linkedin.com/in/shelly-leal" target="_blank">Shelly Gabriela Leal</a>
+
+Sound Design: 
+
+ <a href="https://soundcloud.com/daniele-s-dantas" target="_blank">Daniele Dantas</a>
+
+ <a href="https://soundcloud.com/eulina-melo" target="_blank">Lina Melo</a>
 
 
 **Sound Design/ SoundTrack**
 
-Daniele Dantas: https://soundcloud.com/daniele-s-dantas
+Daniele Dantas: 
 
 1 - Melancolia (MENU) - Ella soundtrack 
 
@@ -35,7 +57,7 @@ Daniele Dantas: https://soundcloud.com/daniele-s-dantas
 
 3 - Florear (PUZZLE 1) - Ella soundtrack
 
-Lina Melo: https://soundcloud.com/eulina-melo
+Lina Melo:
 
 4 - Memórias (PUZZLE 2) 
 
