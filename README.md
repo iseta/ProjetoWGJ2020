@@ -9,6 +9,9 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 **Descrição do jogo**: Ajude Ella a recuperar a alegria de sua vida solucionando os quebra-cabeças escondidos nas fotografias antigas de seus amigos, revelando belas memórias.
 
+**GDD - Game Design Document**
+
+https://drive.google.com/file/d/1kwFrIWnR-NHwHu10_WhbTZ7c2v8Rxe7R/view?usp=sharing
 
 **Créditos**
 
