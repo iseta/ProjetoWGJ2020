@@ -12,7 +12,7 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 
 **Créditos**
 
-Arte: Camille Freitas (Cami), Eliane Bittencourt (Eli), Nicky Silva.
+Arte: ![Camille Freitas (Cami)](https://www.artstation.com/camicadf), Eliane Bittencourt (Eli), Nicky Silva.
 
 Conteúdo: Bianca Carvalho, Íris Monteiro.
 
