@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7275, y: 0}
   m_AnchorMax: {x: 1, y: 0.18122223}
-  m_AnchoredPosition: {x: 238.19995, y: -8.490021}
+  m_AnchoredPosition: {x: 238.19989, y: -8.490021}
   m_SizeDelta: {x: -33.82849, y: -44.17276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261437463
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 1429720540}
   fadeSpeed: 1
-  sceneToLoadWhenDone: 5
+  sceneToLoadWhenDone: 6
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:

@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 28647391}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 0
+  sceneToLoadWhenDone: 7
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:
@@ -5013,7 +5013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 2094360128}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 2
+  sceneToLoadWhenDone: 9
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:

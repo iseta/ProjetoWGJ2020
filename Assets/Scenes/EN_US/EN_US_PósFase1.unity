@@ -1706,7 +1706,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &592950435
 RectTransform:
@@ -2101,7 +2101,7 @@ RectTransform:
   m_LocalScale: {x: 1.03125, y: 1.03125, z: 1.03125}
   m_Children: []
   m_Father: {fileID: 1931150581}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2199,7 +2199,7 @@ RectTransform:
   m_Children:
   - {fileID: 621570596}
   m_Father: {fileID: 1931150581}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75500005, y: 0.023554958}
   m_AnchorMax: {x: 0.98875004, y: 0.12122223}
@@ -3445,7 +3445,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1578730567
 RectTransform:
@@ -4098,7 +4098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 1888137384}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 0
+  sceneToLoadWhenDone: 11
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:
@@ -4385,8 +4385,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 797841213}
   - {fileID: 878051482}
+  - {fileID: 797841213}
   m_Father: {fileID: 1183802574}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

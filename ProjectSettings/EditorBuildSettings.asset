@@ -6,21 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MVP/Menu.unity
+    path: Assets/Scenes/StartingScreen.unity
+    guid: 3c667b5cf4a76f340af8b0ace3872555
+  - enabled: 1
+    path: Assets/Scenes/PT_BR/PT_BR_Menu.unity
     guid: c7621646c78be8d4e9e7dd32a3d58815
   - enabled: 1
-    path: "Assets/Scenes/MVP/IntroP\xF3sMenu.unity"
+    path: "Assets/Scenes/PT_BR/PT_BR_IntroP\xF3sMenu.unity"
     guid: 614b9f4c3f84c60448f79500bcb62470
   - enabled: 1
-    path: Assets/Scenes/MVP/Fase1.unity
+    path: Assets/Scenes/PT_BR/PT_BR_Fase1.unity
     guid: e64314f06db917949bd6ab02dc356cec
   - enabled: 1
-    path: "Assets/Scenes/MVP/P\xF3sFase1.unity"
+    path: "Assets/Scenes/PT_BR/PT_BR_P\xF3sFase1.unity"
     guid: 9bc00689cd2e5db48b71ce9ee6a3b57b
   - enabled: 1
-    path: Assets/Scenes/MVP/TelaBrancaTexto.unity
+    path: Assets/Scenes/PT_BR/PT_BR_TelaBrancaTexto.unity
     guid: a6c11907b161509488629d4c648643fc
   - enabled: 1
-    path: Assets/Scenes/MVP/Creditos.unity
+    path: Assets/Scenes/PT_BR/PT_BR_Creditos.unity
     guid: 3c831726339cce44fb90e1ce7f1894a0
+  - enabled: 1
+    path: Assets/Scenes/EN_US/EN_US_Menu.unity
+    guid: bcdd396e5b43de341afbbd6fe3214bc3
+  - enabled: 1
+    path: "Assets/Scenes/EN_US/EN_US_IntroP\xF3sMenu.unity"
+    guid: 398e394b62389e24aa1759808554f952
+  - enabled: 1
+    path: Assets/Scenes/EN_US/EN_US_Fase1.unity
+    guid: 4dce7fc2c06959b4cb70fbe82fba7f68
+  - enabled: 1
+    path: "Assets/Scenes/EN_US/EN_US_P\xF3sFase1.unity"
+    guid: 6f0532ac09686ce40a527834dee5f14d
+  - enabled: 1
+    path: Assets/Scenes/EN_US/EN_US_TelaBrancaTexto.unity
+    guid: 3070e375b59655848b2c1ad3431e4068
+  - enabled: 1
+    path: Assets/Scenes/EN_US/EN_US_Creditos.unity
+    guid: 486f0c088d007954593aff7834da7e4b
   m_configObjects: {}
