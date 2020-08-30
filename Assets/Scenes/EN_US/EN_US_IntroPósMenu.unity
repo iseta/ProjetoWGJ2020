@@ -4242,13 +4242,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Good morning for me\u2026 or\u2026 good night\u2026 I don\u2019t know the difference
+  - "Good morning for me\u2026or\u2026good night\u2026 I don\u2019t know the difference
     anymore\u2026"
-  - "Another boring Sunday\u2026 or is it\u2026 Wednesday\u2026?"
+  - "Another boring Sunday\u2026or is it\u2026Wednesday\u2026?"
   - "The world changed so suddenly, and things outside seem like a distant and melancholic
     memory\u2026"
   - "\u2026"
-  - "\rWhat a strange bookmark. It almost seems like a\u2026 photograph? I wonder
+  - "\rWhat a strange bookmark. It almost seems like a\u2026photograph? I wonder
     who these people are.\r"
   events:
   - m_PersistentCalls:
