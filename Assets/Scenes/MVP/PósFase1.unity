@@ -1784,7 +1784,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c81edb93ffa89c040846377cdfbfd924, type: 3}
+    m_Font: {fileID: 12800000, guid: b3271f2db318a7444b8ad6cdb4a7e34d, type: 3}
     m_FontSize: 25
     m_FontStyle: 1
     m_BestFit: 0
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 797841215}
   - component: {fileID: 797841214}
   m_Layer: 5
-  m_Name: fadeImage
+  m_Name: fadeImageAux
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1492172377}
+      - m_Target: {fileID: 797841214}
         m_MethodName: ExitOutro
         m_Mode: 1
         m_Arguments:
@@ -2781,7 +2781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.94875014, y: 0.061564382}
   m_AnchorMax: {x: 0.9862501, y: 0.31621784}
-  m_AnchoredPosition: {x: 0, y: 0.90000916}
+  m_AnchoredPosition: {x: 0, y: 0.90001297}
   m_SizeDelta: {x: 0.53759766, y: 0.19223022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209459928
