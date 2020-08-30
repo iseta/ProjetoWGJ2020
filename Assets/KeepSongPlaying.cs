@@ -16,7 +16,7 @@ public class KeepSongPlaying : MonoBehaviour
 
     public void CheckScene(Scene current, Scene next)
     {
-        if(next.buildIndex == 5)
+        if(next.buildIndex == 6 || next.buildIndex == 12)
         {
             songPlaying.AdjustVolume(true);
         }
