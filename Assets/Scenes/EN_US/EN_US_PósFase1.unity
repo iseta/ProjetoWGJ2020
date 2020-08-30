@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25068df85a343a7469353b538a516e70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c71ccced3efc5c24cbacaddeee8c8808, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 156678e272dbfd04f9340ce99231b751, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fb3dcbebe3ed5144a3a52521daea1bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2117,7 +2117,7 @@ RectTransform:
   m_GameObject: {fileID: 878051481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1931150581}
   m_RootOrder: 0
@@ -2156,13 +2156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9960785, g: 0.86274517, b: 0.654902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ad90142fa9b01644902b21d65d2168c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a96d229fc331ed2499cda7eb7c003f27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2179,7 +2179,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878051481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878051481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
@@ -3127,13 +3127,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9843138, g: 0.9294118, b: 0.8470589, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 893beb75d5f364c4b83e3e5294c8fcbd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c8680f6e9ab42f4784ca95757fce931, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4175,7 +4175,7 @@ MonoBehaviour:
   - "Wait\u2026 I remember that day! It\u2019s my best friend in this photograph!
     And that\u2019s me, right next to her!\r"
   - "\u2026"
-  - I can almost hear our laughter, feel the heat from the Sun on my face...
+  - "I can almost hear our laughter, feel the heat from the Sun on my face\u2026"
   events:
   - m_PersistentCalls:
       m_Calls: []
