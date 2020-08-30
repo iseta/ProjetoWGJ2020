@@ -10,8 +10,24 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 **Descrição do jogo**: Ajude Ella a recuperar a alegria de sua vida solucionando os quebra-cabeças escondidos nas fotografias antigas de seus amigos, revelando belas memórias.
 
 
-**Sons utilizados no jogo**
+**Sound Design/ SoundTrack**
 
+Ella soundtrack
+
+Daniele Dantas
+1 - Melancolia (MENU) - Ella soundtrack 
+
+2 - Interlúdio - Ella soundtrack
+
+3 - Florear (PUZZLE 1) - Ella soundtrack
+
+Lina Melo
+
+4 - Memórias (PUZZLE 2) 
+
+5 - Together even apart (Créditos) - Ella soundtrack
+
+Sons utilizados: 
 https://freesound.org/
 
 Piscina: https://freesound.org/people/FreqMan/sounds/42957/
