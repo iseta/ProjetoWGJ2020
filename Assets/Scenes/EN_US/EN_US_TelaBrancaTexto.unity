@@ -1179,11 +1179,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbf7b7708f0dd942ad9e2e9773c8e9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt: "Como pude esquecer? Como pude esquecer de quem eu sou?\r\nMe sentia t\xE3o
-    sozinha que esqueci de todas as lembran\xE7as gostosas e os amigos incr\xEDveis
-    que eu tenho!\r\nN\xF3s estamos afastadas agora, mas a dist\xE2ncia \xE9 apenas
-    f\xEDsica. E eu me recuso a ficar triste por causa dela!\r\nEstaremos <b>SEMPRE</b>
-    juntas!"
+  txt: 'How could I forget? How could I forget who I am?
+
+    I felt so lonely that
+    I forgot all the happy memories and the amazing friends that I still have!
+
+    We
+    may be apart now, but this distance is only physical. And I refuse to stay depressed
+    because of it!
+
+    We will <b>ALWAYS</b> be together!
+
+'
   speed: 0.5
   waitWhenDone: 2.5
   doWhenDone:

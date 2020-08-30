@@ -2044,7 +2044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 797841215}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 4
+  sceneToLoadWhenDone: 11
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:
@@ -3203,7 +3203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 1492172378}
   fadeSpeed: 0.8
-  sceneToLoadWhenDone: 4
+  sceneToLoadWhenDone: 11
   needsIntro: 1
   doWhenIntroDone:
     m_PersistentCalls:
@@ -4172,10 +4172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Espera\u2026 eu lembro desse dia! \xC9 minha melhor amiga na foto! E sou eu
-    aqui do lado dela!\r "
+  - "Wait\u2026 I remember that day! It\u2019s my best friend in this photograph!
+    And that\u2019s me, right next to her!\r"
   - "\u2026"
-  - "Consigo at\xE9 ouvir nossas gargalhadas, sentir o calor do sol no meu rosto\u2026"
+  - I can almost hear our laughter, feel the heat from the Sun on my face...
   events:
   - m_PersistentCalls:
       m_Calls: []

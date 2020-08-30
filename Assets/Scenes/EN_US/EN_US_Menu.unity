@@ -304,7 +304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS"
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2056273c514b2e944a63acd67dccf6fe, type: 2}
   m_sharedMaterial: {fileID: 7383738327022229327, guid: 2056273c514b2e944a63acd67dccf6fe,
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 129370541}
-    characterCount: 8
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NOVO JOGO
+  m_text: 'NEW GAME
 
 '
   m_isRightToLeft: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 402155730}
-    characterCount: 10
+    characterCount: 9
     spriteCount: 0
     spaceCount: 2
     wordCount: 2
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 1769403284}
   fadeSpeed: 1
-  sceneToLoadWhenDone: 5
+  sceneToLoadWhenDone: 12
   needsIntro: 0
   doWhenIntroDone:
     m_PersistentCalls:
@@ -3452,7 +3452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deseja mesmo sair do jogo?
+  m_text: Do you wish to quit the game?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2056273c514b2e944a63acd67dccf6fe, type: 2}
   m_sharedMaterial: {fileID: 7383738327022229327, guid: 2056273c514b2e944a63acd67dccf6fe,
@@ -3522,10 +3522,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -1.278152}
   m_textInfo:
     textComponent: {fileID: 8626536191984141250}
-    characterCount: 26
+    characterCount: 29
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
     lineCount: 1
     pageCount: 1

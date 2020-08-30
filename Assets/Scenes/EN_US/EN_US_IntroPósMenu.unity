@@ -317,7 +317,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "N\xE3o"
+  m_Text: No
 --- !u!222 &91492162
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deseja retornar ao menu inicial?
+  m_text: Do you wish to return to the main menu?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78cc83357eb037049bdb63aa5ebf1fb1, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4242,13 +4242,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Bom dia para mim\u2026 ou boa noite\u2026 n\xE3o sei mais a diferen\xE7a\u2026"
-  - "Outro domingo pra n\xE3o fazer nada\u2026 ou ser\xE1 que \xE9\u2026 quarta-feira?"
-  - "O mundo mudou de repente e tudo ficou abstrato, como uma lembran\xE7a antiga
-    e melanc\xF3lica\u2026"
+  - "Good morning for me\u2026 or\u2026 good night\u2026 I don\u2019t know the difference
+    anymore...\r"
+  - "Another boring Sunday\u2026 or is it\u2026 Wednesday\u2026?"
+  - 'The world changed so suddenly, and things outside seem like a distant and melancholic
+    memory... '
   - "\u2026"
-  - "Que marcador de p\xE1gina estranho. Parece at\xE9\u2026 uma fotografia? Queria
-    saber quem s\xE3o essas pessoas\u2026"
+  - "\rWhat a strange bookmark. It almost seems like a\u2026 photograph? I wonder
+    who these people are.\r"
   events:
   - m_PersistentCalls:
       m_Calls: []
@@ -4782,7 +4783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sim
+  m_Text: Yes
 --- !u!222 &1962339687
 CanvasRenderer:
   m_ObjectHideFlags: 0
