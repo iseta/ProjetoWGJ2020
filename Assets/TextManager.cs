@@ -26,6 +26,8 @@ public class TextManager : MonoBehaviour
 
     public string beforeCoroutine;
 
+    public Animator selfAnim;
+
     public void StartTyping()
     {
         StartCoroutine(TypeWriter(lines[currentLine]));
@@ -33,30 +35,30 @@ public class TextManager : MonoBehaviour
 
     public void CheckClick()
     {
-        if (currentLine < lines.Length)
-        {
-            if (textComponent.text != lines[currentLine])
+            if (currentLine < lines.Length)
             {
-                StopAllCoroutines();
-                textComponent.text = lines[currentLine];
-                if (currentLine == lines.Length - 1)
+                if (textComponent.text != lines[currentLine])
                 {
-                    StartCoroutine(WaitUntilDone());
+                    StopAllCoroutines();
+                    textComponent.text = lines[currentLine];
+                    if (currentLine == lines.Length - 1)
+                    {
+                        StartCoroutine(WaitUntilDone());
+                    }
                 }
-            }
-            else if(currentLine < lines.Length -1)
-            {
-                soundDialogue.Play();
-                currentLine++;
-                beforeCoroutine = textComponent.text;
-                StartCoroutine(TypeWriter(lines[currentLine]));
-                if (events[currentLine] != null)
+                else if (currentLine < lines.Length - 1 && selfAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
                 {
-                    events[currentLine].Invoke();
+                    soundDialogue.Play();
+                    currentLine++;
+                    beforeCoroutine = textComponent.text;
+                    StartCoroutine(TypeWriter(lines[currentLine]));
+                    if (events[currentLine] != null)
+                    {
+                        events[currentLine].Invoke();
+                    }
+                    if (currentLine == lines.Length - 1) { imgClick.SetActive(false); };
                 }
-                if (currentLine == lines.Length - 1) { imgClick.SetActive(false);};
-            }
-        }
+            }  
     }
 
     public void StopTyping()

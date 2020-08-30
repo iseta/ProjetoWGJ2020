@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioControls : MonoBehaviour
 {
     public AudioSource self;
-    static bool isMute;
+    static bool isMute = false;
     public GameObject btnSound, btnMute;
 
     private void Start()
