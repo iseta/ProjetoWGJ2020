@@ -62,5 +62,4 @@ Abrir gaveta:https://freesound.org/people/AdrianoAnjos/sounds/503174/
 Sorrisos: https://freesound.org/people/Kalibrk/sounds/433921/
 
 **UI Icons**
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
