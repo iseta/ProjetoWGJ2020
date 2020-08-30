@@ -10,9 +10,22 @@ Projeto realizado para a Women Game Jam 2020 - Equipe Jurassic Girls.
 **Descrição do jogo**: Ajude Ella a recuperar a alegria de sua vida solucionando os quebra-cabeças escondidos nas fotografias antigas de seus amigos, revelando belas memórias.
 
 
-**Sound Design/ SoundTrack**
+**Créditos**
 
-Ella soundtrack
+Arte: Camille Freitas (Cami), Eliane Bittencourt (Eli), Nicky Silva.
+
+Conteúdo: Bianca Carvalho, Íris Monteiro.
+
+Game Design: Jéssica Della Flor, Natalia Borges.
+
+Programação: Fernanda Galindo, Isabelle Brandelero (Iseta), Shelly Gabriela Leal.
+
+Sound Design: Daniele Dantas, Lina Melo.
+
+QA: Jessica Fernandes.
+
+
+**Sound Design/ SoundTrack**
 
 Daniele Dantas
 1 - Melancolia (MENU) - Ella soundtrack 
